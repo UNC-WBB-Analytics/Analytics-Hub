@@ -10,21 +10,35 @@
     }
 
     .header {
-      background-color: #012169; /* UNC dark blue */
-      color: white;
+      background: linear-gradient(to bottom, #7bafd4, transparent);
+      color: #012169;
       padding: 20px;
       text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      position: relative;
     }
 
-    .header h1 {
+    .header img {
+      height: 60px;
+    }
+
+    .header-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .header-text h1 {
       margin: 0;
       font-size: 32px;
     }
 
-    .header p {
+    .header-text p {
       margin: 5px 0 0;
       font-size: 16px;
-      color: #b3cde0; /* lighter accent */
     }
 
     .nav {
@@ -42,15 +56,19 @@
     }
 
     .nav a:hover {
-      background-color: #ddd;
+     background-color: #ddd;
     }
   </style>
 </head>
 <body>
 
   <div class="header">
-    <h1>UNC WBB Analytics Hub</h1>
-    <p>A one stop shop for all UNC WBB analytical resources</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/North_Carolina_Tar_Heels_logo.svg/1200px-North_Carolina_Tar_Heels_logo.svg.png" alt="UNC Logo">
+    <div class="header-text">
+      <h1>UNC WBB Analytics Hub</h1>
+      <p>A one stop shop for all UNC WBB analytical resources</p>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/37/Jumpman_logo.svg/1200px-Jumpman_logo.svg.png" alt="Jumpman Logo">
   </div>
 
   <div class="nav">
