@@ -78,7 +78,24 @@
     <a href="#">Postgame Reports & 4 Factors</a>
     <a href="#">Offensive Set Metrics</a>
     <a href="#">Other Reports/Resources</a>
-    <a href="#">Contact</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div id="contact" style="padding: 40px; max-width: 600px; margin: auto;">
+    <h2>Contact</h2>
+    <form action="https://formsubmit.co/glederer@ad.unc.edu" method="POST">
+      <label for="name">Your Name:</label><br>
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin-bottom: 15px;"><br>
+
+      <label for="message">Question / Comment / Request:</label><br>
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 10px; margin-bottom: 15px;"></textarea><br>
+
+      <input type="hidden" name="_subject" value="New UNC WBB Analytics Message!">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+
+      <button type="submit" style="padding: 10px 20px; font-size: 16px;">Send</button>
+    </form>
   </div>
 
 </body>
